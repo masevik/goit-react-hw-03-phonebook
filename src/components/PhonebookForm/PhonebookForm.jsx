@@ -41,7 +41,6 @@ export class PhonebookForm extends Component {
     const { nameInputId, telInputId } = this;
 
     const HandleSubmit = (values, { resetForm }) => {
-      console.log(values);
       const success = this.props.onSubmit(values);
       if (success) resetForm();
     };
